@@ -18,7 +18,7 @@ export const translations = {
     },
     // Footer
     footer: {
-      tagline: 'École de danse à Laval depuis 1998. Nous cultivons le mouvement avec grâce, discipline et passion pour tous les âges.',
+      tagline: 'École de danse à Laval depuis 2008. Nous cultivons le mouvement avec grâce, discipline et passion pour tous les âges.',
       explore: 'Explorer',
       scheduleAndPricing: 'Horaire & Tarifs',
       parentCorner: 'Coin des Parents',
@@ -30,10 +30,10 @@ export const translations = {
     },
     // Home
     home: {
-      badge: 'Depuis 1998',
+      badge: 'Depuis 2008',
       heroTitle: 'Le mouvement avec',
       heroTitleAccent: 'grâce',
-      heroTitleEnd: 'depuis 1998.',
+      heroTitleEnd: 'depuis 2008.',
       heroDescription: 'Située à Laval, notre école propose deux grands studios équipés de miroirs, parfaits pour divers événements et cours de danse pour tous les âges.',
       discoverCourses: 'Découvrir nos cours',
       viewSchedule: "Voir l'horaire",
@@ -159,7 +159,7 @@ export const translations = {
       enroll: 'Enroll Now',
     },
     footer: {
-      tagline: 'Dance school in Laval since 1998. We cultivate movement with grace, discipline and passion for all ages.',
+      tagline: 'Dance school in Laval since 2008. We cultivate movement with grace, discipline and passion for all ages.',
       explore: 'Explore',
       scheduleAndPricing: 'Schedule & Pricing',
       parentCorner: 'Parents Corner',
@@ -170,10 +170,10 @@ export const translations = {
       copyright: 'Studios Prestige. Dance school in Laval.',
     },
     home: {
-      badge: 'Since 1998',
+      badge: 'Since 2008',
       heroTitle: 'Movement with',
       heroTitleAccent: 'grace',
-      heroTitleEnd: 'since 1998.',
+      heroTitleEnd: 'since 2008.',
       heroDescription: 'Located in Laval, our school offers two large mirror-equipped studios, perfect for various events and dance classes for all ages.',
       discoverCourses: 'Discover our classes',
       viewSchedule: 'View schedule',
