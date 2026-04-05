@@ -4,9 +4,15 @@ import { useLanguage } from '../contexts/LanguageContext'
 
 const categories = [...new Set(schedule.map(s => s.category))]
 
+const dayTranslations: Record<string, Record<string, string>> = {
+  fr: { lundi: 'Lundi', mardi: 'Mardi', mercredi: 'Mercredi', jeudi: 'Jeudi', vendredi: 'Vendredi', samedi: 'Samedi', dimanche: 'Dimanche' },
+  en: { lundi: 'Monday', mardi: 'Tuesday', mercredi: 'Wednesday', jeudi: 'Thursday', vendredi: 'Friday', samedi: 'Saturday', dimanche: 'Sunday' },
+}
+
 export default function Schedule() {
   const [filter, setFilter] = useState<string>('all')
-  const { t } = useLanguage()
+  const { t, locale } = useLanguage()
+  const translateDay = (day: string) => dayTranslations[locale]?.[day.toLowerCase()] ?? day
 
   const filtered = filter === 'all' ? schedule : schedule.filter(s => s.category === filter)
 
@@ -100,7 +106,7 @@ export default function Schedule() {
                     <td className="px-6 py-4 text-on-surface-variant">{entry.age}</td>
                     <td className="px-6 py-4 text-on-surface-variant">{entry.level}</td>
                     <td className="px-6 py-4 text-on-surface-variant">{entry.name || '—'}</td>
-                    <td className="px-6 py-4 text-on-surface-variant capitalize">{entry.day}</td>
+                    <td className="px-6 py-4 text-on-surface-variant">{translateDay(entry.day)}</td>
                     <td className="px-6 py-4 text-on-surface font-medium">{entry.time}</td>
                   </tr>
                 ))}

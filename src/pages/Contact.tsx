@@ -13,7 +13,7 @@ export default function Contact() {
           <div className="space-y-8">
             <div className="aspect-video rounded-xl overflow-hidden bg-surface-container-high">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2793.456!2d-73.712!3d45.577!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2z!5e0!3m2!1sfr!2sca!4v1"
+                src="https://maps.google.com/maps?q=1774+Boulevard+des+Laurentides+Laval+QC+H7M+2P6+Canada&output=embed&hl=fr"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}

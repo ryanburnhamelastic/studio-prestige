@@ -3,7 +3,8 @@ import { courses } from '../data/courses'
 import { useLanguage } from '../contexts/LanguageContext'
 
 export default function Programs() {
-  const { t } = useLanguage()
+  const { t, locale } = useLanguage()
+  const courseList = courses[locale]
 
   return (
     <>
@@ -28,7 +29,7 @@ export default function Programs() {
             <h2 className="text-3xl font-bold mb-2">{t.programs.sectionTitle}</h2>
             <p className="text-on-surface-variant mb-12">{t.programs.sectionSubtitle}</p>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {courses.map((course) => (
+              {courseList.map((course) => (
                 <div
                   key={course.name}
                   className="bg-surface-container-lowest rounded-xl p-8 hover:shadow-xl transition-shadow duration-500 border border-outline-variant/10"
