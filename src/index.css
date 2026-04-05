@@ -27,4 +27,28 @@
     white-space: nowrap;
     direction: ltr;
   }
+
+  /* Primary button: velvet gradient, uppercase, tracked */
+  .btn-primary {
+    @apply bg-primary text-on-primary px-8 py-3 rounded-full font-bold
+           uppercase tracking-wider text-sm
+           hover:scale-105 active:scale-95 transition-all;
+    background: linear-gradient(135deg, #825b55, #754f49);
+  }
+
+  /* Secondary button: ghost border style */
+  .btn-secondary {
+    @apply px-8 py-3 rounded-full font-bold
+           uppercase tracking-wider text-sm
+           hover:scale-105 active:scale-95 transition-all;
+    border: 1px solid rgba(187, 185, 178, 0.15);
+    color: #5a3a35;
+  }
+
+  /* Glassmorphism nav */
+  .glass-nav {
+    background: rgba(255, 252, 247, 0.7);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+  }
 }

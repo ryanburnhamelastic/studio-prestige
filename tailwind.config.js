@@ -8,47 +8,55 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: '#556346',
-        'primary-dim': '#49573a',
-        'primary-container': '#d8e8c3',
-        'on-primary': '#edfdd7',
-        'on-primary-container': '#48563a',
+        // Primary: Warm clay/rose — "The Nurtured Elite"
+        primary: '#825b55',
+        'primary-dim': '#754f49',
+        'primary-container': '#ffcbc4',
+        'on-primary': '#fff5f3',
+        'on-primary-container': '#5a3a35',
+        // Secondary: Warm gold
         secondary: '#78604b',
         'secondary-dim': '#6b5440',
-        'secondary-container': '#fddcc3',
+        'secondary-container': '#ffdea5',
         'on-secondary': '#ffffff',
         'on-secondary-container': '#644d3a',
+        // Tertiary: Oatmeal warmth
         tertiary: '#716252',
         'tertiary-dim': '#645647',
         'tertiary-container': '#fde7d3',
         'on-tertiary': '#ffffff',
         'on-tertiary-container': '#635445',
+        // Backgrounds & Surfaces: Layered vellum
         background: '#fffcf7',
-        'on-background': '#383831',
+        'on-background': '#383833',
         surface: '#fffcf7',
         'surface-bright': '#fffcf7',
         'surface-dim': '#e4e3d7',
         'surface-container-lowest': '#ffffff',
         'surface-container-low': '#fcf9f3',
-        'surface-container': '#f6f4ec',
+        'surface-container': '#f6f3ed',
         'surface-container-high': '#f0eee5',
         'surface-container-highest': '#eae8de',
         'surface-variant': '#eae8de',
-        'on-surface': '#383831',
+        // Text
+        'on-surface': '#383833',
         'on-surface-variant': '#65655c',
+        // Borders & outlines
         outline: '#818178',
-        'outline-variant': '#babab0',
+        'outline-variant': '#bbb9b2',
+        // Error
         error: '#a54731',
         'error-container': '#fe8b70',
         'on-error': '#ffffff',
+        // Inverse
         'inverse-surface': '#0e0e0c',
         'inverse-on-surface': '#9e9d98',
-        'inverse-primary': '#e9f9d3',
+        'inverse-primary': '#ffcbc4',
       },
       borderRadius: {
-        DEFAULT: '1rem',
-        lg: '2rem',
-        xl: '3rem',
+        DEFAULT: '0.75rem',
+        lg: '1rem',
+        xl: '1.5rem',
         full: '9999px',
       },
       fontFamily: {
@@ -56,8 +64,9 @@ export default {
         body: ['"Plus Jakarta Sans"', 'sans-serif'],
       },
       boxShadow: {
-        'ambient': '0 40px 60px -15px rgba(56,56,49,0.06)',
-        'ambient-lg': '0 40px 60px -15px rgba(56,56,49,0.08)',
+        // Ambient shadows: 40px blur, 6% opacity, tinted (never pure black)
+        'ambient': '0 40px 60px -15px rgba(56,56,51,0.06)',
+        'ambient-lg': '0 40px 60px -15px rgba(56,56,51,0.08)',
       },
     },
   },

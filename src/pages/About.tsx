@@ -21,8 +21,12 @@ export default function About() {
             </p>
           </div>
           <div className="lg:col-span-5 relative">
-            <div className="aspect-[4/5] rounded-xl overflow-hidden shadow-xl bg-surface-container-high flex items-center justify-center">
-              <span className="text-on-surface-variant text-sm">Photo du studio</span>
+            <div className="aspect-[4/5] rounded-xl overflow-hidden shadow-xl">
+              <img
+                src="/ballet-pointe.jpg"
+                alt="Chaussons de pointe de ballet sur plancher de bois dans un studio de danse"
+                className="w-full h-full object-cover"
+              />
             </div>
           </div>
         </div>

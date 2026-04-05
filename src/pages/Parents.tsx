@@ -25,6 +25,14 @@ export default function Parents() {
               <p>Jeudi: 17h30-19h30</p>
               <p>Samedi: 9h00-15h00</p>
             </div>
+            <a
+              href="https://www.studiosprestige.com/files/jan-calendar-.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block mt-6 text-primary font-semibold underline decoration-primary/30 hover:decoration-primary text-sm"
+            >
+              Voir le calendrier complet
+            </a>
           </div>
 
           {/* Politiques */}
@@ -32,12 +40,22 @@ export default function Parents() {
             <h2 className="text-2xl font-bold mb-6">Politiques et Code de Danseurs</h2>
             <p className="text-on-surface-variant mb-4">Saison A2025</p>
             <div className="space-y-4">
-              <a href="#" className="block text-primary font-semibold underline decoration-primary/30 hover:decoration-primary">
+              <a
+                href="https://www.studiosprestige.com/files/politiques--procedures---saison-a2024.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block text-primary font-semibold underline decoration-primary/30 hover:decoration-primary"
+              >
                 Politiques et Code de Danseurs
               </a>
             </div>
             <h3 className="text-xl font-bold mt-8 mb-4">Code Vestimentaire</h3>
-            <a href="#" className="block text-primary font-semibold underline decoration-primary/30 hover:decoration-primary">
+            <a
+              href="https://www.studiosprestige.com/files/code-vestimentaire.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block text-primary font-semibold underline decoration-primary/30 hover:decoration-primary"
+            >
               Code Vestimentaire
             </a>
           </div>

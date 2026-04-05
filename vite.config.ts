@@ -12,7 +12,7 @@ export default defineConfig({
         name: 'Studios Prestige - École de danse',
         short_name: 'Studios Prestige',
         description: 'École de danse à Laval, Québec. Ballet, Jazz, Hip Hop, Contemporain et plus.',
-        theme_color: '#556346',
+        theme_color: '#825b55',
         background_color: '#fffcf7',
         display: 'standalone',
         orientation: 'portrait',
