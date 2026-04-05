@@ -73,20 +73,6 @@ export default function Navbar() {
     },
   ]
 
-  // Flat list for mobile
-  const allLinks = [
-    { to: '/', label: t.nav.home },
-    { to: '/programmes', label: t.nav.programs },
-    { to: '/horaire', label: t.nav.schedule },
-    { to: '/competitif', label: t.nav.competitive },
-    { to: '/sports-etudes', label: t.nav.sportsEtudes },
-    { to: '/a-propos', label: t.nav.about },
-    { to: '/location', label: t.nav.location },
-    { to: '/parents', label: t.nav.parents },
-    { to: '/boutique', label: t.nav.boutique },
-    { to: '/contact', label: t.nav.contact },
-  ]
-
   const isGroupActive = (group: typeof dropdownGroups[0]) =>
     group.links.some(l => l.to === location.pathname)
 
