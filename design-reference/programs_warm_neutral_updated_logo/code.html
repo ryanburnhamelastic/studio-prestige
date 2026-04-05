@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&amp;family=Plus_Jakarta_Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-primary-fixed": "#364329",
+                    "surface-container-lowest": "#ffffff",
+                    "on-primary-fixed-variant": "#526043",
+                    "on-tertiary-fixed-variant": "#6d5e4f",
+                    "primary-container": "#d8e8c3",
+                    "tertiary-dim": "#645647",
+                    "on-error-container": "#742410",
+                    "tertiary": "#716252",
+                    "on-tertiary": "#ffffff",
+                    "error-container": "#fe8b70",
+                    "inverse-primary": "#e9f9d3",
+                    "secondary-fixed": "#fddcc3",
+                    "on-primary-container": "#48563a",
+                    "on-surface": "#383831",
+                    "primary-fixed": "#d8e8c3",
+                    "surface-container-high": "#f0eee5",
+                    "outline": "#818178",
+                    "tertiary-container": "#fde7d3",
+                    "on-primary": "#edfdd7",
+                    "on-secondary-fixed-variant": "#6f5743",
+                    "tertiary-fixed-dim": "#eed9c6",
+                    "surface-variant": "#eae8de",
+                    "on-secondary-fixed": "#503b29",
+                    "on-surface-variant": "#65655c",
+                    "surface-container": "#f6f4ec",
+                    "on-tertiary-fixed": "#504234",
+                    "error-dim": "#5c1202",
+                    "surface-bright": "#fffcf7",
+                    "inverse-surface": "#0e0e0c",
+                    "surface-container-highest": "#eae8de",
+                    "surface-tint": "#556346",
+                    "on-tertiary-container": "#635445",
+                    "surface-container-low": "#fcf9f3",
+                    "outline-variant": "#babab0",
+                    "on-error": "#ffffff",
+                    "on-secondary": "#ffffff",
+                    "background": "#fffcf7",
+                    "on-background": "#383831",
+                    "surface": "#fffcf7",
+                    "primary-dim": "#49573a",
+                    "tertiary-fixed": "#fde7d3",
+                    "secondary-container": "#fddcc3",
+                    "primary": "#556346",
+                    "primary-fixed-dim": "#cadab5",
+                    "surface-dim": "#e4e3d7",
+                    "secondary-dim": "#6b5440",
+                    "on-secondary-container": "#644d3a",
+                    "inverse-on-surface": "#9e9d98",
+                    "error": "#a54731",
+                    "secondary-fixed-dim": "#efceb5",
+                    "secondary": "#78604b"
+            },
+            "borderRadius": {
+                    "DEFAULT": "1rem",
+                    "lg": "2rem",
+                    "xl": "3rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Noto Serif"],
+                    "body": ["Plus Jakarta Sans"],
+                    "label": ["Plus Jakarta Sans"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            display: inline-block;
+            line-height: 1;
+            text-transform: none;
+            letter-spacing: normal;
+            word-wrap: normal;
+            white-space: nowrap;
+            direction: ltr;
+        }
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        h1, h2, h3, .serif { font-family: 'Noto Serif', serif; }
+    </style>
+</head>
+<body class="bg-background text-on-surface selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopNavBar -->
+<nav class="bg-[#fffcf7] dark:bg-stone-950/80 backdrop-blur-xl rounded-full mt-4 mx-4 shadow-[0_40px_60px_-15px_rgba(56,56,49,0.06)] sticky top-4 z-50">
+<div class="flex justify-between items-center max-w-7xl mx-auto px-8 py-4">
+<div class="flex items-center">
+<img alt="Studios Prestige Logo" class="h-12 w-auto object-contain mix-blend-multiply dark:mix-blend-normal" src="https://lh3.googleusercontent.com/aida/ADBb0ugnibvpnqU0qlO7hHtlW6hRBa90g_BTCzpCFmIyhyLPglBiVSOpxrgv39d_jt19qo3BBRNvD8nmyakhkd-Qponih00DP-81kiVQyynKOey2-FVRp7jT7C61PdAYsNnTjhiQKuvwxuaasH1V5qOvT23lKnWMSPANyoR9FYW9ouC_x6uTk3PV3EgnHduA9ZqrGncdYvEiI4FFc_xuiZu9xB8Ik3qvhzqT9imb02ZTe9f80vKO3itFol5n4jdaR5V3RLSdC8ZURRv3gks"/>
+</div>
+<div class="hidden md:flex items-center space-x-8">
+<a class="font-['Noto_Serif'] text-lg leading-relaxed text-[#716252] dark:text-stone-400 hover:text-[#556346] hover:scale-105 transition-transform duration-300" href="#">Home</a>
+<a class="font-['Noto_Serif'] text-lg leading-relaxed text-[#556346] dark:text-stone-100 border-b-2 border-[#556346] pb-1 hover:scale-105 transition-transform duration-300" href="#">Programs</a>
+<a class="font-['Noto_Serif'] text-lg leading-relaxed text-[#716252] dark:text-stone-400 hover:text-[#556346] hover:scale-105 transition-transform duration-300" href="#">About</a>
+<a class="font-['Noto_Serif'] text-lg leading-relaxed text-[#716252] dark:text-stone-400 hover:text-[#556346] hover:scale-105 transition-transform duration-300" href="#">Competitive</a>
+</div>
+<button class="bg-primary text-on-primary px-6 py-2 rounded-full font-semibold hover:scale-105 transition-transform duration-300 active:scale-95">
+                Enroll Now
+            </button>
+</div>
+</nav>
+<main class="max-w-7xl mx-auto px-6 md:px-12 pt-20">
+<!-- Hero Section -->
+<section class="mb-24 flex flex-col md:flex-row items-center gap-16">
+<div class="md:w-1/2 space-y-6">
+<span class="bg-tertiary-container text-on-tertiary-container px-4 py-1.5 rounded-full text-sm font-medium tracking-wide">Discovery &amp; Mastery</span>
+<h1 class="text-5xl md:text-7xl font-bold text-on-surface leading-[1.1]">The Art of <span class="italic text-primary">Graceful</span> Growth</h1>
+<p class="text-lg text-on-surface-variant max-w-lg">From the first steps in our Baby &amp; Me classes to the technical mastery of Level 9, we nurture every dancer's journey with intentionality and warmth.</p>
+</div>
+<div class="md:w-1/2 relative">
+<div class="absolute -top-8 -left-8 w-64 h-64 bg-primary-container rounded-full mix-blend-multiply filter blur-3xl opacity-30"></div>
+<div class="rounded-xl overflow-hidden aspect-[4/5] shadow-2xl">
+<img class="w-full h-full object-cover" data-alt="Soft focused photo of a young ballerina in a cream tutu practicing at a wooden barre in a sun-drenched studio" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAtN9ODKWadM_l0tCaUwuwbGVLw4AEzFBKbKTBQPNYb8bavrKT6v37CEGi607ukgW4BAo_cXJ74eO_EwJf-zfD313M8Rw2op8NXh-edEZER9pRmqANywSlSfRIKo2LldSaeZqbSaBbSui0klzXA_fhMRxa8FJjeF6wMa3tGJUjZEyYJDv1vCGI8rR0MmMaPy-LB8OyvJIkUZ1SqdYYWLwQ7kxYU99hQZf9SZm6yo-cBrvHeUC4ap90hX39txdGCXYSYCeyzDS_-UlZJ"/>
+</div>
+</div>
+</section>
+<!-- Summer Punch Card - Special Feature -->
+<section class="mb-32 bg-surface-container-low rounded-xl p-12 relative overflow-hidden">
+<div class="absolute top-0 right-0 w-1/3 h-full bg-primary/5 -skew-x-12"></div>
+<div class="relative z-10 grid md:grid-cols-2 gap-12 items-center">
+<div class="space-y-6">
+<h2 class="text-4xl font-bold text-primary">Summer 'Punch Card'</h2>
+<p class="text-on-surface-variant text-lg">Flexible summer movement for busy families. No long-term commitment, just pure joy. Valid for all seasonal workshops and open studio sessions.</p>
+<div class="flex flex-wrap gap-4">
+<div class="bg-surface-container-lowest p-6 rounded-lg shadow-sm border border-outline-variant/15 flex-1 min-w-[200px]">
+<span class="block text-sm text-tertiary font-medium mb-1">5-Class Pass</span>
+<span class="text-3xl font-bold">$125</span>
+</div>
+<div class="bg-surface-container-lowest p-6 rounded-lg shadow-sm border border-outline-variant/15 flex-1 min-w-[200px]">
+<span class="block text-sm text-tertiary font-medium mb-1">10-Class Pass</span>
+<span class="text-3xl font-bold">$220</span>
+</div>
+</div>
+<button class="bg-secondary text-on-secondary px-8 py-4 rounded-full font-bold shadow-md hover:scale-105 transition-transform active:scale-95">Secure Your Pass</button>
+</div>
+<div class="hidden md:block">
+<div class="grid grid-cols-2 gap-4">
+<div class="h-48 rounded-lg overflow-hidden translate-y-8">
+<img class="w-full h-full object-cover" data-alt="Close up of pink ballet slippers tied around a dancer's ankles in a bright airy room" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD0ONg_t-NCAI3e71sqOk1VJA6XqOxc268NRbd3MGhhyW27S-fGj3FazTsThVA6r-i8Psr5OmoHXLsbt8-8-TAHBkI8he4NHHOt3Z8ONMcJ0sWFmCpZUp083P06pv28blJ_2Fl7QRCzS0E9OD2OqS4G55ourAVBqnl9sT5CbKsGE0mTAWYjBvp9yrEW2xOcdecGKH8ZmNMW5GBZTpVupcYEcLVZX9kTOeJ73uaV1fB4WPhG0J2TPJADR6Wl1Va_OL81gqr2RyUwWv7I"/>
+</div>
+<div class="h-48 rounded-lg overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Minimalist shot of a wooden dance floor reflecting warm afternoon sunlight through a large window" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBldcDhpqUd-XXB6wSEDpLdPR5xgOG2tMFWVP2I_Ht8EuhNa70vyOh4K74oPO_BEUvNgg8GBS5igqKXDBWycRMYDiWF1-pasV-kEyXwvvjo3A8BnQschaDLawcMbX6AB5kfYPm7-9pLZ-os60WgekHxNtbEzhlM5mWa5BCyb-mKKmBvlfzntIsWHcBRB6FeYBAz82ms4S15GGC8vtxsJIMLgIE3HB8S8AFNacRFl7OeUVEJM7VPG-YTp-cxFDrtO8Yio4A5p6lLrs6p"/>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Program Categories -->
+<div class="space-y-32">
+<!-- Early Childhood -->
+<section>
+<div class="mb-12">
+<h3 class="text-3xl font-bold mb-2">Early Childhood</h3>
+<p class="text-on-surface-variant">The foundation of rhythm and imaginative play.</p>
+</div>
+<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Baby & Me -->
+<div class="bg-surface-container-lowest rounded-xl p-8 hover:shadow-xl transition-shadow duration-500 border border-outline-variant/10">
+<div class="w-12 h-12 bg-tertiary-container rounded-full flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-on-tertiary-container" data-icon="child_care">child_care</span>
+</div>
+<h4 class="text-2xl font-bold mb-3">Baby &amp; Me</h4>
+<p class="text-on-surface-variant mb-6">Bonding through movement. For crawlers up to 24 months and their favorite adult.</p>
+<div class="flex justify-between items-center pt-6 border-t border-outline-variant/10">
+<span class="text-xl font-bold text-primary">$85<small class="text-xs font-normal text-on-surface-variant ml-1">/mo</small></span>
+<span class="text-sm font-medium px-3 py-1 bg-surface-container-high rounded-full">45 Min</span>
+</div>
+</div>
+<!-- Preschool Prep -->
+<div class="bg-surface-container-lowest rounded-xl p-8 hover:shadow-xl transition-shadow duration-500 border border-outline-variant/10">
+<div class="w-12 h-12 bg-primary-container rounded-full flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-on-primary-container" data-icon="auto_awesome">auto_awesome</span>
+</div>
+<h4 class="text-2xl font-bold mb-3">Creative Movement</h4>
+<p class="text-on-surface-variant mb-6">Age 3-4. Exploring spatial awareness and basic motor skills through dance-based storytelling.</p>
+<div class="flex justify-between items-center pt-6 border-t border-outline-variant/10">
+<span class="text-xl font-bold text-primary">$95<small class="text-xs font-normal text-on-surface-variant ml-1">/mo</small></span>
+<span class="text-sm font-medium px-3 py-1 bg-surface-container-high rounded-full">50 Min</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Progressive Levels -->
+<section>
+<div class="mb-12">
+<h3 class="text-3xl font-bold mb-2">The Progressive Path</h3>
+<p class="text-on-surface-variant">Technical excellence balanced with artistic expression.</p>
+</div>
+<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Level 1-3 -->
+<div class="bg-surface-container-lowest rounded-xl p-8 border border-outline-variant/10 relative overflow-hidden group">
+<div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
+<span class="material-symbols-outlined text-8xl" data-icon="filter_1">filter_1</span>
+</div>
+<h4 class="text-2xl font-bold mb-3">Levels 1 - 3</h4>
+<p class="text-on-surface-variant mb-6 text-sm">Foundational technique focusing on posture, terminology, and core strength. Ages 6+.</p>
+<ul class="space-y-3 mb-8">
+<li class="flex items-center text-sm gap-2"><span class="material-symbols-outlined text-primary text-lg" data-icon="check_circle">check_circle</span> Intro to Ballet &amp; Jazz</li>
+<li class="flex items-center text-sm gap-2"><span class="material-symbols-outlined text-primary text-lg" data-icon="check_circle">check_circle</span> Twice weekly recommended</li>
+</ul>
+<div class="flex justify-between items-center">
+<span class="text-xl font-bold text-primary">$120<small class="text-xs font-normal text-on-surface-variant ml-1">/mo</small></span>
+<button class="text-secondary font-bold text-sm hover:underline">View Schedule</button>
+</div>
+</div>
+<!-- Level 4-6 -->
+<div class="bg-surface-container-lowest rounded-xl p-8 border border-outline-variant/10 relative overflow-hidden group">
+<div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
+<span class="material-symbols-outlined text-8xl" data-icon="filter_4">filter_4</span>
+</div>
+<h4 class="text-2xl font-bold mb-3">Levels 4 - 6</h4>
+<p class="text-on-surface-variant mb-6 text-sm">Intermediate artistry. Introduction to pre-pointe and advanced contemporary concepts.</p>
+<ul class="space-y-3 mb-8">
+<li class="flex items-center text-sm gap-2"><span class="material-symbols-outlined text-primary text-lg" data-icon="check_circle">check_circle</span> Performance focused</li>
+<li class="flex items-center text-sm gap-2"><span class="material-symbols-outlined text-primary text-lg" data-icon="check_circle">check_circle</span> Multi-genre curriculum</li>
+</ul>
+<div class="flex justify-between items-center">
+<span class="text-xl font-bold text-primary">$180<small class="text-xs font-normal text-on-surface-variant ml-1">/mo</small></span>
+<button class="text-secondary font-bold text-sm hover:underline">View Schedule</button>
+</div>
+</div>
+<!-- Level 7-9 -->
+<div class="bg-primary text-on-primary rounded-xl p-8 relative overflow-hidden group shadow-lg">
+<div class="absolute top-0 right-0 p-4 opacity-20">
+<span class="material-symbols-outlined text-8xl" data-icon="star">star</span>
+</div>
+<h4 class="text-2xl font-bold mb-3">Pre-Professional (7-9)</h4>
+<p class="text-on-primary/80 mb-6 text-sm">The pinnacle of our training. Comprehensive preparation for collegiate and professional careers.</p>
+<ul class="space-y-3 mb-8">
+<li class="flex items-center text-sm gap-2"><span class="material-symbols-outlined text-on-primary text-lg" data-icon="check_circle">check_circle</span> Intensive training load</li>
+<li class="flex items-center text-sm gap-2"><span class="material-symbols-outlined text-on-primary text-lg" data-icon="check_circle">check_circle</span> Individual mentorship</li>
+</ul>
+<div class="flex justify-between items-center">
+<span class="text-xl font-bold">$240<small class="text-xs font-normal opacity-70 ml-1">/mo</small></span>
+<button class="bg-surface-container-lowest text-primary px-4 py-2 rounded-full font-bold text-sm">Audition Info</button>
+</div>
+</div>
+</div>
+</section>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-[#fcf9f3] dark:bg-stone-900 rounded-t-[3rem] mt-20">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12 max-w-7xl mx-auto px-12 py-16">
+<div class="space-y-6">
+<div class="font-['Noto_Serif'] text-xl text-[#556346]">Studios Prestige</div>
+<p class="font-['Plus_Jakarta_Sans'] text-sm tracking-wide text-[#78604b] dark:text-stone-300 leading-relaxed">
+                    © 2024 Studios Prestige. Nurturing movement with grace. Our philosophy is rooted in the belief that every child deserves a safe place to shine.
+                </p>
+</div>
+<div class="space-y-4">
+<h5 class="text-[#556346] font-semibold font-['Noto_Serif']">Quick Links</h5>
+<nav class="flex flex-col space-y-3">
+<a class="text-[#716252] opacity-80 hover:opacity-100 underline decoration-[#556346]/30 font-['Plus_Jakarta_Sans'] text-sm tracking-wide" href="#">Contact</a>
+<a class="text-[#716252] opacity-80 hover:opacity-100 underline decoration-[#556346]/30 font-['Plus_Jakarta_Sans'] text-sm tracking-wide" href="#">Instagram</a>
+<a class="text-[#716252] opacity-80 hover:opacity-100 underline decoration-[#556346]/30 font-['Plus_Jakarta_Sans'] text-sm tracking-wide" href="#">Facebook</a>
+<a class="text-[#716252] opacity-80 hover:opacity-100 underline decoration-[#556346]/30 font-['Plus_Jakarta_Sans'] text-sm tracking-wide" href="#">Newsletter</a>
+</nav>
+</div>
+<div class="bg-surface-container-high/50 p-8 rounded-lg space-y-4">
+<h5 class="text-[#556346] font-semibold font-['Noto_Serif']">Studio Hours</h5>
+<div class="space-y-2 text-sm font-['Plus_Jakarta_Sans'] text-[#78604b]">
+<div class="flex justify-between"><span>Mon - Fri</span><span>3:00pm - 9:00pm</span></div>
+<div class="flex justify-between"><span>Saturday</span><span>9:00am - 4:00pm</span></div>
+<div class="flex justify-between"><span>Sunday</span><span>Closed</span></div>
+</div>
+</div>
+</div>
+</footer>
+</body></html>

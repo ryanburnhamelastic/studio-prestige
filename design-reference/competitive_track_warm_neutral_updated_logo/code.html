@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Competitive Track | Studios Prestige</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-primary-fixed": "#364329",
+                    "surface-container-lowest": "#ffffff",
+                    "on-primary-fixed-variant": "#526043",
+                    "on-tertiary-fixed-variant": "#6d5e4f",
+                    "primary-container": "#d8e8c3",
+                    "tertiary-dim": "#645647",
+                    "on-error-container": "#742410",
+                    "tertiary": "#716252",
+                    "on-tertiary": "#ffffff",
+                    "error-container": "#fe8b70",
+                    "inverse-primary": "#e9f9d3",
+                    "secondary-fixed": "#fddcc3",
+                    "on-primary-container": "#48563a",
+                    "on-surface": "#383831",
+                    "primary-fixed": "#d8e8c3",
+                    "surface-container-high": "#f0eee5",
+                    "outline": "#818178",
+                    "tertiary-container": "#fde7d3",
+                    "on-primary": "#edfdd7",
+                    "on-secondary-fixed-variant": "#6f5743",
+                    "tertiary-fixed-dim": "#eed9c6",
+                    "surface-variant": "#eae8de",
+                    "on-secondary-fixed": "#503b29",
+                    "on-surface-variant": "#65655c",
+                    "surface-container": "#f6f4ec",
+                    "on-tertiary-fixed": "#504234",
+                    "error-dim": "#5c1202",
+                    "surface-bright": "#fffcf7",
+                    "inverse-surface": "#0e0e0c",
+                    "surface-container-highest": "#eae8de",
+                    "surface-tint": "#556346",
+                    "on-tertiary-container": "#635445",
+                    "surface-container-low": "#fcf9f3",
+                    "outline-variant": "#babab0",
+                    "on-error": "#ffffff",
+                    "on-secondary": "#ffffff",
+                    "background": "#fffcf7",
+                    "on-background": "#383831",
+                    "surface": "#fffcf7",
+                    "primary-dim": "#49573a",
+                    "tertiary-fixed": "#fde7d3",
+                    "secondary-container": "#fddcc3",
+                    "primary": "#556346",
+                    "primary-fixed-dim": "#cadab5",
+                    "surface-dim": "#e4e3d7",
+                    "secondary-dim": "#6b5440",
+                    "on-secondary-container": "#644d3a",
+                    "inverse-on-surface": "#9e9d98",
+                    "error": "#a54731",
+                    "secondary-fixed-dim": "#efceb5",
+                    "secondary": "#78604b"
+            },
+            "borderRadius": {
+                    "DEFAULT": "1rem",
+                    "lg": "2rem",
+                    "xl": "3rem",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": [
+                            "Noto Serif"
+                    ],
+                    "body": [
+                            "Plus Jakarta Sans"
+                    ],
+                    "label": [
+                            "Plus Jakarta Sans"
+                    ]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #fffcf7;
+            color: #383831;
+        }
+        .serif-text { font-family: 'Noto Serif', serif; }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-background">
+<!-- Top Navigation -->
+<nav class="fixed top-0 left-0 right-0 z-50">
+<div class="mt-4 mx-4 flex justify-between items-center max-w-7xl md:mx-auto px-8 py-3 bg-[#fffcf7] dark:bg-stone-950/80 backdrop-blur-xl rounded-full shadow-[0_40px_60px_-15px_rgba(56,56,49,0.06)]">
+<a class="flex items-center" href="#">
+<img alt="Studios Prestige Logo" class="h-12 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ADBb0ugnibvpnqU0qlO7hHtlW6hRBa90g_BTCzpCFmIyhyLPglBiVSOpxrgv39d_jt19qo3BBRNvD8nmyakhkd-Qponih00DP-81kiVQyynKOey2-FVRp7jT7C61PdAYsNnTjhiQKuvwxuaasH1V5qOvT23lKnWMSPANyoR9FYW9ouC_x6uTk3PV3EgnHduA9ZqrGncdYvEiI4FFc_xuiZu9xB8Ik3qvhzqT9imb02ZTe9f80vKO3itFol5n4jdaR5V3RLSdC8ZURRv3gks"/>
+</a>
+<!-- Desktop Links -->
+<div class="hidden md:flex items-center space-x-8">
+<a class="text-[#716252] dark:text-stone-400 hover:text-[#556346] font-['Noto_Serif'] text-lg leading-relaxed hover:scale-105 transition-transform duration-300" href="#">Home</a>
+<a class="text-[#716252] dark:text-stone-400 hover:text-[#556346] font-['Noto_Serif'] text-lg leading-relaxed hover:scale-105 transition-transform duration-300" href="#">Programs</a>
+<a class="text-[#716252] dark:text-stone-400 hover:text-[#556346] font-['Noto_Serif'] text-lg leading-relaxed hover:scale-105 transition-transform duration-300" href="#">About</a>
+<a class="text-[#556346] dark:text-stone-100 border-b-2 border-[#556346] pb-1 font-['Noto_Serif'] text-lg leading-relaxed hover:scale-105 transition-transform duration-300" href="#">Competitive</a>
+</div>
+<button class="bg-primary text-on-primary px-6 py-2 rounded-full font-medium hover:scale-105 transition-transform active:scale-95">
+            Enroll Now
+        </button>
+</div>
+</nav>
+<!-- Hero Section -->
+<header class="relative pt-32 pb-20 px-8 overflow-hidden">
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-16">
+<div class="w-full md:w-5/12 space-y-8 z-10">
+<div class="inline-flex items-center gap-2 px-4 py-1.5 bg-tertiary-container text-on-tertiary-container rounded-full text-sm font-medium shadow-sm">
+<span class="material-symbols-outlined text-sm">workspace_premium</span>
+                Competitive Track
+            </div>
+<h1 class="serif-text text-5xl md:text-7xl text-primary leading-[1.1] font-bold">The Pursuit of Elite Grace.</h1>
+<p class="text-lg text-on-surface-variant leading-relaxed max-w-md">
+                Designed for dancers who seek technical excellence and artistic maturity. Our competitive program nurtures the professional spirit within a supportive, family-oriented environment.
+            </p>
+<div class="flex items-center gap-4">
+<button class="bg-primary text-on-primary px-8 py-4 rounded-full font-semibold shadow-lg hover:shadow-xl hover:scale-105 transition-all">
+                    View Requirements
+                </button>
+<button class="flex items-center gap-2 text-primary font-semibold hover:gap-4 transition-all">
+                    Tour the Studio <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+</div>
+<div class="w-full md:w-7/12 relative">
+<div class="aspect-[4/5] rounded-xl overflow-hidden shadow-2xl relative z-10">
+<img class="w-full h-full object-cover" data-alt="graceful ballet dancer in a sun-drenched studio performing an elite technical pose with soft lighting and natural shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCB-SNocktdj9ho815CCBAzFYLreThivyMwTur116FivXUL1iyGyOdjU7kq9a5lyAClCZMyx5nTsGYtEpfEmoeqPOVxj7Pc_F5tb1cQYqQ7hYN_RLXe5yTHkoXscNkElb8KJq68NKqS6i1zk_E4bhk-C9lUcTBSbLHtrkr3Jh5DBAOXLLG0y8rN9oigRQdVjLZAfw5lW4ePbYpuwAQKzObNxFbAvaAbW8Jt4QWVg48_OT8jfK8o98KLRQP3ZUxEYeF6EIx_S63oNEbL"/>
+</div>
+<!-- Decorative element -->
+<div class="absolute -bottom-10 -left-10 w-64 h-64 bg-primary-container rounded-xl -z-0 opacity-50 blur-3xl"></div>
+<div class="absolute -top-10 -right-10 w-80 h-80 bg-secondary-container rounded-full -z-0 opacity-30"></div>
+</div>
+</div>
+</header>
+<!-- Accolades Bento Grid -->
+<section class="py-24 bg-surface-container-low px-8">
+<div class="max-w-7xl mx-auto">
+<div class="mb-16 text-center">
+<h2 class="serif-text text-4xl text-primary mb-4">A Legacy of Excellence</h2>
+<p class="text-on-surface-variant">Where technical mastery meets artistic expression.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-8">
+<!-- Large Highlight Card -->
+<div class="md:col-span-8 bg-surface-container-lowest rounded-xl p-12 flex flex-col justify-between relative overflow-hidden group shadow-[0_40px_60px_-15px_rgba(56,56,49,0.04)]">
+<div class="z-10">
+<span class="material-symbols-outlined text-primary text-5xl mb-6">emoji_events</span>
+<h3 class="serif-text text-4xl text-on-surface mb-4">Studio of the Year</h3>
+<p class="text-on-surface-variant text-lg max-w-md">Recognized nationally for our commitment to student well-being and high-performance training standards four years running.</p>
+</div>
+<div class="mt-12 flex gap-4 z-10">
+<span class="bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-bold">2021</span>
+<span class="bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-bold">2022</span>
+<span class="bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-bold">2023</span>
+<span class="bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-bold">2024</span>
+</div>
+<!-- Decorative Background -->
+<div class="absolute top-0 right-0 w-1/2 h-full opacity-10 group-hover:opacity-20 transition-opacity">
+<img class="w-full h-full object-cover" data-alt="blurred motion of a dancer in a flowing silk dress creating ethereal movement patterns" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC5i0QAIZbW4edpDV_EGoYj-dF4DyWgZ9phOxS0i96hTkTJOZFjcWDaZujCXueBoSw4HMKj7uLPb4V0WvE417pdatBpsWf7aarZ3r-C7T8LwBnLloTu1eq4PpQ-Ms5SYWlWcA8awAngHB502i8uwl9wbp8158p76CyDx4JAvRLPjf92OSKBwLzMFZ6a56g9uBzWupuwkwhmWzp-hmREkO86jyjQ4tFfJ37tacPoUB1njZUYdV8CYMJgW1LPXtlFaWBOH8_oH6DrTSId"/>
+</div>
+</div>
+<!-- Vertical Card -->
+<div class="md:col-span-4 bg-primary text-on-primary rounded-xl p-10 flex flex-col items-center text-center shadow-xl">
+<div class="w-20 h-20 bg-on-primary/10 rounded-full flex items-center justify-center mb-8">
+<span class="material-symbols-outlined text-4xl">star</span>
+</div>
+<h3 class="serif-text text-3xl mb-4">Outstanding Technique</h3>
+<p class="opacity-90 leading-relaxed">Awarded to our collective for precision, alignment, and the safety-first technical approach that defines our track.</p>
+<div class="mt-auto pt-8">
+<img class="w-full h-32 object-cover rounded-lg" data-alt="close up of ballet shoes on a wooden studio floor with warm morning sunlight" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDPB8o5aVn1iMC7l-h-Cl5VKipYSAng6-iXKqwiLOkzEdPUJfhPl5rkW9jyy-tMOSyIYqESnZ71U0N3sq53pSUEO6_DM-CACSqxdz0VNrV3jtDd1R2u6cQxqY8FmiFi63UmJc4wu7L_Xu1w38Kj6AAOBHU7s2fPZJPoxNKv25ZNoUiHnzfA2TndyAqLrUj3HfIRKmStK7iWA-Vw7J1h_zXJS_wFsdvz-Y6DYSxlmDR-MlY5a8hs45NiPHGnka_SsMGezEBqb8MryJ9Y"/>
+</div>
+</div>
+<!-- Horizontal Bottom Card -->
+<div class="md:col-span-12 bg-secondary-container rounded-xl p-8 flex flex-col md:flex-row items-center gap-12 shadow-sm">
+<div class="flex-1 space-y-4">
+<h4 class="serif-text text-2xl text-on-secondary-container">Performance Standards</h4>
+<p class="text-on-secondary-container opacity-80">Our track isn't just about winning. It's about the discipline of rehearsal and the joy of the stage. Every dancer receives personalized technical feedback and mentorship from world-class faculty.</p>
+</div>
+<div class="flex gap-4">
+<div class="text-center bg-white/40 backdrop-blur-md p-6 rounded-xl w-32">
+<div class="text-3xl font-bold text-primary">98%</div>
+<div class="text-xs uppercase tracking-widest mt-2 text-on-surface-variant font-bold">Placement</div>
+</div>
+<div class="text-center bg-white/40 backdrop-blur-md p-6 rounded-xl w-32">
+<div class="text-3xl font-bold text-primary">15+</div>
+<div class="text-xs uppercase tracking-widest mt-2 text-on-surface-variant font-bold">Titles</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Standards & Curriculum -->
+<section class="py-24 px-8 max-w-7xl mx-auto">
+<div class="flex flex-col md:flex-row gap-20">
+<div class="md:w-1/2 space-y-12">
+<h2 class="serif-text text-5xl text-primary leading-tight">Technical Mastery &amp; Discipline</h2>
+<div class="space-y-10">
+<div class="flex gap-6 items-start">
+<div class="w-12 h-12 rounded-full bg-tertiary-container flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-on-tertiary-container">architecture</span>
+</div>
+<div>
+<h4 class="font-bold text-xl mb-2">Refined Alignment</h4>
+<p class="text-on-surface-variant leading-relaxed">Focus on the biomechanics of movement to ensure longevity and prevent injury while achieving peak aesthetic performance.</p>
+</div>
+</div>
+<div class="flex gap-6 items-start">
+<div class="w-12 h-12 rounded-full bg-tertiary-container flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-on-tertiary-container">psychology</span>
+</div>
+<div>
+<h4 class="font-bold text-xl mb-2">Performance Mindset</h4>
+<p class="text-on-surface-variant leading-relaxed">Psychological coaching to handle stage pressure with poise and maintain a healthy relationship with competition.</p>
+</div>
+</div>
+<div class="flex gap-6 items-start">
+<div class="w-12 h-12 rounded-full bg-tertiary-container flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-on-tertiary-container">palette</span>
+</div>
+<div>
+<h4 class="font-bold text-xl mb-2">Artistic Direction</h4>
+<p class="text-on-surface-variant leading-relaxed">Developing the "story" behind every move. We teach our dancers to be artists first and athletes second.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="md:w-1/2">
+<div class="relative">
+<img class="rounded-xl shadow-2xl object-cover aspect-[4/5]" data-alt="contemporary dance rehearsal in a high-end minimalist studio with floor-to-ceiling windows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDMUR2NN8YPk_ItW66yZepsJXhl_YU71jEn2a-QxRiNQu-fXpZNhYc-lj830DjLUNfWUZczC22lpHtlQtukW5wCwZYmy3Iq0AvQ-U7v3CX8TkgYOLfEHXcuKf9DaSx-ytKlndmmRHw428owTRzXgrLFHZiHIBKZDIl_JEsKK_MOWXA7saesIcdVcaPmiqgzKQ-Rx9410p9hlRqC9kgs_5gU6qRNf3IC2s4esYqKKXyJFDmnrgpq-fz5t6BxijNqCuQv4uAwFdmUdzEX"/>
+<div class="absolute -bottom-8 -right-8 bg-white p-8 rounded-xl shadow-lg max-w-xs">
+<span class="material-symbols-outlined text-primary text-3xl mb-4">format_quote</span>
+<p class="italic text-on-surface-variant">"The technical standard here is unparalleled, but the warmth of the community is what keeps us coming back."</p>
+<div class="mt-4 font-bold text-primary">— Elena R., Parent</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Call to Action -->
+<section class="py-24 px-8">
+<div class="max-w-5xl mx-auto bg-primary rounded-xl p-16 text-center text-on-primary relative overflow-hidden">
+<div class="relative z-10">
+<h2 class="serif-text text-4xl md:text-5xl mb-6">Ready to Take the Next Step?</h2>
+<p class="text-lg opacity-90 max-w-2xl mx-auto mb-10 font-light">
+                Auditions for the 2024/2025 Competitive Season are currently open for advanced and intermediate dancers.
+            </p>
+<div class="flex flex-col md:flex-row gap-4 justify-center">
+<button class="bg-surface-bright text-primary px-10 py-4 rounded-full font-bold shadow-xl hover:scale-105 transition-transform">
+                    Download Info Packet
+                </button>
+<button class="border-2 border-on-primary/30 text-on-primary px-10 py-4 rounded-full font-bold hover:bg-on-primary/10 transition-colors">
+                    Book Assessment
+                </button>
+</div>
+</div>
+<!-- Background detail -->
+<div class="absolute top-0 left-0 w-full h-full opacity-10 pointer-events-none">
+<div class="absolute -top-24 -left-24 w-96 h-96 bg-white rounded-full blur-3xl"></div>
+<div class="absolute -bottom-24 -right-24 w-96 h-96 bg-white rounded-full blur-3xl"></div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-[#fcf9f3] dark:bg-stone-900 rounded-t-[3rem] mt-20">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12 max-w-7xl mx-auto px-12 py-16">
+<div class="space-y-6">
+<div class="font-['Noto_Serif'] text-xl text-[#556346]">Studios Prestige</div>
+<p class="text-[#78604b] dark:text-stone-300 font-['Plus_Jakarta_Sans'] text-sm tracking-wide opacity-80 leading-loose">
+                Nurturing movement with grace and technical precision. Providing a home for dancers of all levels to flourish.
+            </p>
+</div>
+<div class="space-y-6">
+<h4 class="font-bold text-primary text-sm uppercase tracking-widest">Connect</h4>
+<div class="flex flex-col space-y-4">
+<a class="text-[#716252] opacity-80 hover:opacity-100 underline decoration-[#556346]/30 font-['Plus_Jakarta_Sans'] text-sm tracking-wide transition-all" href="#">Instagram</a>
+<a class="text-[#716252] opacity-80 hover:opacity-100 underline decoration-[#556346]/30 font-['Plus_Jakarta_Sans'] text-sm tracking-wide transition-all" href="#">Facebook</a>
+<a class="text-[#716252] opacity-80 hover:opacity-100 underline decoration-[#556346]/30 font-['Plus_Jakarta_Sans'] text-sm tracking-wide transition-all" href="#">Newsletter</a>
+</div>
+</div>
+<div class="space-y-6">
+<h4 class="font-bold text-primary text-sm uppercase tracking-widest">Office</h4>
+<div class="flex flex-col space-y-4">
+<a class="text-[#716252] opacity-80 hover:opacity-100 underline decoration-[#556346]/30 font-['Plus_Jakarta_Sans'] text-sm tracking-wide transition-all" href="#">Contact</a>
+<p class="text-[#716252] opacity-80 font-['Plus_Jakarta_Sans'] text-sm tracking-wide">123 Dancer's Plaza, Suite 400<br/>Prestige Heights, CA 90210</p>
+</div>
+</div>
+</div>
+<div class="max-w-7xl mx-auto px-12 pb-12 text-center md:text-left border-t border-primary/5 pt-8">
+<p class="text-[#78604b] dark:text-stone-300 font-['Plus_Jakarta_Sans'] text-xs tracking-wide">
+            © 2024 Studios Prestige. Nurturing movement with grace.
+        </p>
+</div>
+</footer>
+</body></html>
