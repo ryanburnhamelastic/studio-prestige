@@ -12,6 +12,14 @@ export default function SportsEtudes() {
             <p className="text-on-surface-variant text-lg leading-relaxed">
               Le Studio Prestige offre en partenariat avec l'École Secondaire Laval Junior Academy
             </p>
+            <a
+              href="https://lavaljunior.com/en/specialized/sportsetude/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block text-primary font-semibold underline decoration-primary/30 hover:decoration-primary"
+            >
+              POUR PLUS D'INFOS, CLIQUEZ ICI
+            </a>
             <div>
               <h3 className="font-bold text-xl mb-2">Mission</h3>
               <p className="text-on-surface-variant leading-relaxed">

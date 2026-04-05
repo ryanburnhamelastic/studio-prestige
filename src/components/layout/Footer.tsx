@@ -59,7 +59,7 @@ export default function Footer() {
           </div>
           <div className="flex gap-4 pt-2">
             <a
-              href="https://www.facebook.com/Studio-Prestige-157859734239684"
+              href="https://www.facebook.com/Studio-Prestige-1578597342395842/?epa=SEARCH_BOX"
               target="_blank"
               rel="noopener noreferrer"
               className="text-tertiary hover:text-primary transition-colors text-sm underline decoration-primary/30"
@@ -67,7 +67,7 @@ export default function Footer() {
               Facebook
             </a>
             <a
-              href="https://www.instagram.com"
+              href="https://www.instagram.com/danseprestige/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-tertiary hover:text-primary transition-colors text-sm underline decoration-primary/30"

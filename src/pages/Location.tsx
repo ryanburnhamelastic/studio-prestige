@@ -1,5 +1,3 @@
-import { Link } from 'react-router-dom'
-
 export default function Location() {
   return (
     <>
@@ -21,12 +19,14 @@ export default function Location() {
             <p className="text-lg text-on-surface-variant leading-relaxed">
               Veuillez prendre rendez-vous pour visiter nos salles et connaître nos tarifs.
             </p>
-            <Link
-              to="/contact"
+            <a
+              href="https://www.facebook.com/studiosprestige/?view_public_for=1578597342395842"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-block bg-primary text-on-primary px-10 py-4 rounded-full font-bold hover:scale-105 active:scale-95 transition-all mt-4"
             >
               Rendez-vous
-            </Link>
+            </a>
           </div>
         </div>
       </section>

@@ -31,20 +31,48 @@ export default function Boutique() {
               Envie de représenter le Studio Prestige en dehors des cours? Nous avons quelque
               chose pour tout le monde !!
             </p>
-            <div className="space-y-3 text-on-surface">
+            <div className="space-y-3 text-on-surface mb-8">
               <p>T-Shirt rose: <strong className="text-primary">$25.00-$35.00</strong></p>
               <p>Chandail gris manche longue: <strong className="text-primary">$20.00</strong></p>
               <p>Sweat-shirt Crew Neck: <strong className="text-primary">$35.00-$45.00</strong></p>
+            </div>
+            <div className="flex flex-col sm:flex-row gap-3">
+              <a
+                href="https://docs.google.com/forms/d/1POTVXsiQ0QT4d0tqcxlh1FqowUVyBM3oYaLCNzEgUrw/edit"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-primary text-on-primary px-6 py-3 rounded-full font-bold hover:scale-105 active:scale-95 transition-all text-center text-sm"
+              >
+                Commander ici
+              </a>
+              <a
+                href="https://docs.google.com/forms/d/e/1FAIpQLSeOFIKhtd0MfeC31mCALKRaaMy6OHEuK79kHhImZpqZZAtMHg/viewform?usp=header"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-secondary-container text-on-secondary-container px-6 py-3 rounded-full font-bold hover:scale-105 active:scale-95 transition-all text-center text-sm"
+              >
+                Dance Mom & Dance Dad Merch
+              </a>
             </div>
           </div>
         </div>
 
         {/* Tuques */}
-        <div className="mt-8 bg-surface-container-lowest rounded-xl p-8 shadow-ambient">
-          <h2 className="text-2xl font-bold mb-4">Tuques</h2>
-          <p className="text-on-surface-variant">
-            Disponibles en noir, gris ou rose <strong className="text-primary">$25.00</strong>
-          </p>
+        <div className="mt-8 bg-surface-container-lowest rounded-xl p-8 shadow-ambient flex flex-col sm:flex-row sm:items-center sm:justify-between gap-6">
+          <div>
+            <h2 className="text-2xl font-bold mb-2">Tuques</h2>
+            <p className="text-on-surface-variant">
+              Disponibles en noir, gris ou rose <strong className="text-primary">$25.00</strong>
+            </p>
+          </div>
+          <a
+            href="https://docs.google.com/forms/d/1POTVXsiQ0QT4d0tqcxlh1FqowUVyBM3oYaLCNzEgUrw/edit"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-primary text-on-primary px-6 py-3 rounded-full font-bold hover:scale-105 active:scale-95 transition-all text-center text-sm whitespace-nowrap"
+          >
+            Commander ici
+          </a>
         </div>
       </section>
     </>

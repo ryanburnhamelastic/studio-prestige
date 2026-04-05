@@ -33,8 +33,12 @@ export default function Home() {
             </div>
           </div>
           <div className="lg:col-span-5 relative">
-            <div className="aspect-[4/5] rounded-xl overflow-hidden shadow-xl bg-surface-container-high flex items-center justify-center">
-              <span className="text-on-surface-variant text-sm">Photo du studio</span>
+            <div className="aspect-[4/5] rounded-xl overflow-hidden shadow-xl">
+              <img
+                src="/hero-shoes.jpg"
+                alt="Chaussures de danse - jazz, claquette, pointes et caractère alignées sur des marches de pierre"
+                className="w-full h-full object-cover"
+              />
             </div>
           </div>
         </div>
