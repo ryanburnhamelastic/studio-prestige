@@ -40,9 +40,18 @@ export default function About() {
             <h2 className="text-5xl mb-4">{t.about.teamTitle}</h2>
             <p className="text-tertiary italic text-xl">{t.about.teamSubtitle}</p>
           </div>
-          <p className="text-lg text-on-surface-variant max-w-2xl mx-auto text-center leading-relaxed">
-            {t.home.ourTeamDesc}
-          </p>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <div className="rounded-xl overflow-hidden shadow-ambient">
+              <img
+                src="/teachers.jpg"
+                alt="L'équipe de professeurs de Studios Prestige"
+                className="w-full h-full object-cover"
+              />
+            </div>
+            <p className="text-lg text-on-surface-variant leading-relaxed">
+              {t.home.ourTeamDesc}
+            </p>
+          </div>
         </div>
       </section>
 

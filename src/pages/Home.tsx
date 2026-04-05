@@ -90,14 +90,20 @@ export default function Home() {
           </div>
 
           {/* Notre Equipe */}
-          <div className="bg-surface-container-lowest p-8 rounded-xl shadow-ambient">
-            <div className="w-12 h-12 bg-tertiary-container rounded-full flex items-center justify-center mb-6">
-              <span className="material-symbols-outlined text-on-tertiary-container">groups</span>
+          <div className="bg-surface-container-lowest rounded-xl shadow-ambient overflow-hidden">
+            <div className="h-48 overflow-hidden">
+              <img
+                src="/teachers.jpg"
+                alt="L'équipe de professeurs de Studios Prestige"
+                className="w-full h-full object-cover object-top"
+              />
             </div>
-            <h3 className="text-2xl mb-4">{t.home.ourTeam}</h3>
-            <p className="text-on-surface-variant leading-relaxed">
-              {t.home.ourTeamDesc}
-            </p>
+            <div className="p-8">
+              <h3 className="text-2xl mb-4">{t.home.ourTeam}</h3>
+              <p className="text-on-surface-variant leading-relaxed">
+                {t.home.ourTeamDesc}
+              </p>
+            </div>
           </div>
 
           {/* Nos Cours */}
