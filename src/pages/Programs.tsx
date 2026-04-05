@@ -1,20 +1,22 @@
 import { Link } from 'react-router-dom'
 import { courses } from '../data/courses'
+import { useLanguage } from '../contexts/LanguageContext'
 
 export default function Programs() {
+  const { t } = useLanguage()
+
   return (
     <>
       <section className="max-w-7xl mx-auto px-6 md:px-12 mb-24">
         <div className="mb-16">
           <span className="bg-tertiary-container text-on-tertiary-container px-4 py-1.5 rounded-full text-sm font-medium tracking-wide">
-            Découverte & Maîtrise
+            {t.programs.badge}
           </span>
           <h1 className="text-5xl md:text-7xl font-bold text-on-surface leading-[1.1] mt-6">
-            L'Art de la <span className="italic text-primary">Croissance</span> Gracieuse
+            {t.programs.title} <span className="italic text-primary">{t.programs.titleAccent}</span> {t.programs.titleEnd}
           </h1>
           <p className="text-lg text-on-surface-variant max-w-lg mt-6">
-            Des premiers pas de nos tout-petits à la maîtrise technique avancée, nous accompagnons
-            chaque danseur avec intentionnalité et chaleur.
+            {t.programs.description}
           </p>
         </div>
       </section>
@@ -23,8 +25,8 @@ export default function Programs() {
         <div className="space-y-32">
           {/* Course Categories */}
           <div>
-            <h2 className="text-3xl font-bold mb-2">Nos Cours</h2>
-            <p className="text-on-surface-variant mb-12">Une gamme complète pour tous les âges et niveaux.</p>
+            <h2 className="text-3xl font-bold mb-2">{t.programs.sectionTitle}</h2>
+            <p className="text-on-surface-variant mb-12">{t.programs.sectionSubtitle}</p>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
               {courses.map((course) => (
                 <div
@@ -49,17 +51,17 @@ export default function Programs() {
         <div className="bg-primary-container rounded-xl p-12 md:p-20 text-center relative overflow-hidden">
           <div className="relative z-10">
             <h2 className="text-4xl md:text-5xl text-on-primary-container mb-6">
-              Prêt à danser?
+              {t.programs.ctaTitle}
             </h2>
             <p className="text-on-primary-container/80 mb-10 max-w-md mx-auto">
-              Consultez notre horaire complet et inscrivez-vous dès aujourd'hui.
+              {t.programs.ctaDescription}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link to="/horaire" className="bg-primary text-on-primary px-10 py-4 rounded-full font-bold hover:scale-105 active:scale-95 transition-all">
-                Voir l'horaire
+                {t.home.viewSchedule}
               </Link>
               <Link to="/contact" className="bg-surface-container-lowest text-primary px-10 py-4 rounded-full font-bold hover:scale-105 active:scale-95 transition-all">
-                Nous joindre
+                {t.footer.contactUs}
               </Link>
             </div>
           </div>

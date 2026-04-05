@@ -1,10 +1,12 @@
 import { useState } from 'react'
 import { schedule, pricing, discounts } from '../data/schedule'
+import { useLanguage } from '../contexts/LanguageContext'
 
 const categories = [...new Set(schedule.map(s => s.category))]
 
 export default function Schedule() {
   const [filter, setFilter] = useState<string>('all')
+  const { t } = useLanguage()
 
   const filtered = filter === 'all' ? schedule : schedule.filter(s => s.category === filter)
 
@@ -14,10 +16,10 @@ export default function Schedule() {
       <section className="max-w-7xl mx-auto px-8 mb-16">
         <div className="text-center">
           <span className="inline-block px-4 py-1 rounded-full bg-primary text-on-primary text-sm font-semibold mb-6">
-            Session Hiver 2026
+            {t.home.sessionTitle}
           </span>
-          <h1 className="text-5xl md:text-6xl mb-4">Horaire des cours</h1>
-          <p className="text-2xl text-primary font-bold">10 Janvier - 24 Avril</p>
+          <h1 className="text-5xl md:text-6xl mb-4">{t.schedule.title}</h1>
+          <p className="text-2xl text-primary font-bold">{t.home.sessionDates}</p>
         </div>
       </section>
 
@@ -55,7 +57,7 @@ export default function Schedule() {
                 : 'bg-surface-container-high text-on-surface-variant hover:bg-surface-container-highest'
             }`}
           >
-            Tous
+            {t.schedule.all}
           </button>
           {categories.map(cat => (
             <button
@@ -80,12 +82,12 @@ export default function Schedule() {
             <table className="w-full text-sm">
               <thead>
                 <tr className="bg-surface-container-high">
-                  <th className="text-left px-6 py-4 font-semibold text-on-surface">Catégorie</th>
-                  <th className="text-left px-6 py-4 font-semibold text-on-surface">Âge</th>
-                  <th className="text-left px-6 py-4 font-semibold text-on-surface">Niveau</th>
-                  <th className="text-left px-6 py-4 font-semibold text-on-surface">Nom</th>
-                  <th className="text-left px-6 py-4 font-semibold text-on-surface">Jour</th>
-                  <th className="text-left px-6 py-4 font-semibold text-on-surface">Heure</th>
+                  <th className="text-left px-6 py-4 font-semibold text-on-surface">{t.schedule.category}</th>
+                  <th className="text-left px-6 py-4 font-semibold text-on-surface">{t.schedule.age}</th>
+                  <th className="text-left px-6 py-4 font-semibold text-on-surface">{t.schedule.level}</th>
+                  <th className="text-left px-6 py-4 font-semibold text-on-surface">{t.schedule.name}</th>
+                  <th className="text-left px-6 py-4 font-semibold text-on-surface">{t.schedule.day}</th>
+                  <th className="text-left px-6 py-4 font-semibold text-on-surface">{t.schedule.time}</th>
                 </tr>
               </thead>
               <tbody>
@@ -106,24 +108,24 @@ export default function Schedule() {
             </table>
           </div>
           <p className="px-6 py-4 text-xs text-on-surface-variant border-t border-outline-variant/10">
-            **Prenez-note que tous les pratiques privées ne sont pas sur la list de cours.
+            {t.schedule.privateNote}
           </p>
         </div>
       </section>
 
       {/* Pricing */}
       <section className="max-w-5xl mx-auto px-8 mb-32">
-        <h2 className="text-4xl mb-8 text-center">Tarification 2025</h2>
+        <h2 className="text-4xl mb-8 text-center">{t.schedule.pricingTitle}</h2>
         <div className="grid grid-cols-2 md:grid-cols-3 gap-4 mb-8">
           {pricing.map((p) => (
             <div key={p.duration} className="bg-surface-container-lowest rounded-xl p-6 text-center shadow-ambient">
-              <p className="text-sm text-tertiary font-medium mb-2">Cours de {p.duration}</p>
+              <p className="text-sm text-tertiary font-medium mb-2">{t.schedule.courseOf} {p.duration}</p>
               <p className="text-2xl font-bold text-primary">{p.price}</p>
             </div>
           ))}
         </div>
         <div className="bg-surface-container-low rounded-xl p-8 text-center">
-          <h3 className="text-xl font-bold mb-4">Rabais offerts</h3>
+          <h3 className="text-xl font-bold mb-4">{t.schedule.discountsTitle}</h3>
           {discounts.map((d, i) => (
             <p key={i} className="text-on-surface-variant italic">{d}</p>
           ))}

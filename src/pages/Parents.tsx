@@ -1,13 +1,17 @@
+import { useLanguage } from '../contexts/LanguageContext'
+
 export default function Parents() {
+  const { t } = useLanguage()
+
   return (
     <>
       <section className="max-w-7xl mx-auto px-8 mb-24">
-        <h1 className="text-5xl md:text-7xl text-primary mb-12">Coin des Parents</h1>
+        <h1 className="text-5xl md:text-7xl text-primary mb-12">{t.parents.title}</h1>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
           {/* Dates Importantes */}
           <div className="bg-surface-container-lowest rounded-xl p-8 shadow-ambient">
-            <h2 className="text-2xl font-bold mb-6">Dates Importantes</h2>
+            <h2 className="text-2xl font-bold mb-6">{t.parents.importantDates}</h2>
             <h3 className="text-lg font-semibold text-primary mb-4">Saison A2025</h3>
             <div className="space-y-3 text-on-surface-variant">
               <p>le 9 janvier: <strong className="text-on-surface">DEBUT DE COURS</strong></p>
@@ -17,7 +21,7 @@ export default function Parents() {
 
           {/* Heures du Bureau */}
           <div className="bg-surface-container-lowest rounded-xl p-8 shadow-ambient">
-            <h2 className="text-2xl font-bold mb-6">Heures du Bureau</h2>
+            <h2 className="text-2xl font-bold mb-6">{t.parents.officeHours}</h2>
             <h3 className="text-lg font-semibold text-primary mb-4">Janvier 2026</h3>
             <div className="space-y-2 text-on-surface-variant">
               <p>Lundi: 18h00-21h00</p>
@@ -31,13 +35,13 @@ export default function Parents() {
               rel="noopener noreferrer"
               className="inline-block mt-6 text-primary font-semibold underline decoration-primary/30 hover:decoration-primary text-sm"
             >
-              Voir le calendrier complet
+              {t.parents.viewCalendar}
             </a>
           </div>
 
           {/* Politiques */}
           <div className="bg-surface-container-lowest rounded-xl p-8 shadow-ambient">
-            <h2 className="text-2xl font-bold mb-6">Politiques et Code de Danseurs</h2>
+            <h2 className="text-2xl font-bold mb-6">{t.parents.policies}</h2>
             <p className="text-on-surface-variant mb-4">Saison A2025</p>
             <div className="space-y-4">
               <a
@@ -46,17 +50,17 @@ export default function Parents() {
                 rel="noopener noreferrer"
                 className="block text-primary font-semibold underline decoration-primary/30 hover:decoration-primary"
               >
-                Politiques et Code de Danseurs
+                {t.parents.policies}
               </a>
             </div>
-            <h3 className="text-xl font-bold mt-8 mb-4">Code Vestimentaire</h3>
+            <h3 className="text-xl font-bold mt-8 mb-4">{t.parents.dressCode}</h3>
             <a
               href="https://www.studiosprestige.com/files/code-vestimentaire.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="block text-primary font-semibold underline decoration-primary/30 hover:decoration-primary"
             >
-              Code Vestimentaire
+              {t.parents.dressCode}
             </a>
           </div>
         </div>

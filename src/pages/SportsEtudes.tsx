@@ -1,8 +1,12 @@
+import { useLanguage } from '../contexts/LanguageContext'
+
 export default function SportsEtudes() {
+  const { t } = useLanguage()
+
   return (
     <>
       <section className="max-w-7xl mx-auto px-8 mb-24">
-        <h1 className="text-5xl md:text-7xl text-primary mb-8">Sports-Études</h1>
+        <h1 className="text-5xl md:text-7xl text-primary mb-8">{t.sportsEtudes.title}</h1>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-start">
           <div className="aspect-[4/3] rounded-xl overflow-hidden bg-surface-container-high flex items-center justify-center">
             <span className="text-on-surface-variant text-sm">Photo Sports-Études</span>
@@ -18,7 +22,7 @@ export default function SportsEtudes() {
               rel="noopener noreferrer"
               className="inline-block text-primary font-semibold underline decoration-primary/30 hover:decoration-primary"
             >
-              POUR PLUS D'INFOS, CLIQUEZ ICI
+              {t.sportsEtudes.moreInfo}
             </a>
             <div>
               <h3 className="font-bold text-xl mb-2">Mission</h3>
@@ -30,8 +34,8 @@ export default function SportsEtudes() {
             <div>
               <h3 className="font-bold text-xl mb-2">Cours offerts</h3>
               <p className="text-on-surface-variant leading-relaxed">
-                Ballet, Contemporaine, Danse Urbaine, Jazz, Lyrique, Création & Interprétation,
-                Mis en forme & flexibilité
+                Ballet, Contemporaine, Danse Urbaine, Jazz, Lyrique, Création &amp; Interprétation,
+                Mis en forme &amp; flexibilité
               </p>
             </div>
           </div>
@@ -40,7 +44,7 @@ export default function SportsEtudes() {
 
       <section className="bg-surface-container-low py-24 px-8 mb-24 rounded-xl mx-4">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl mb-8">Le programme de DANSE-ÉTUDES PRESTIGE, c'est:</h2>
+          <h2 className="text-3xl mb-8">{t.sportsEtudes.programTitle}</h2>
           <ul className="space-y-4 text-on-surface-variant text-lg">
             <li className="flex items-start gap-3">
               <span className="material-symbols-outlined text-primary mt-1">check_circle</span>

@@ -1,8 +1,12 @@
+import { useLanguage } from '../contexts/LanguageContext'
+
 export default function Contact() {
+  const { t } = useLanguage()
+
   return (
     <>
       <section className="max-w-7xl mx-auto px-8 mb-24">
-        <h1 className="text-5xl md:text-7xl text-primary mb-12">Nous Joindre</h1>
+        <h1 className="text-5xl md:text-7xl text-primary mb-12">{t.contact.title}</h1>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
           {/* Map & Address */}
@@ -21,24 +25,24 @@ export default function Contact() {
             </div>
             <div className="space-y-4">
               <div>
-                <h3 className="font-bold text-xl mb-2">Adresse</h3>
+                <h3 className="font-bold text-xl mb-2">{t.contact.address}</h3>
                 <p className="text-on-surface-variant">
                   1774 Boulevard des Laurentides<br />
                   Laval, QC H7M 2P6, Canada
                 </p>
               </div>
               <div>
-                <h3 className="font-bold text-xl mb-2">Téléphone</h3>
+                <h3 className="font-bold text-xl mb-2">{t.contact.phone}</h3>
                 <a href="tel:450-490-4104" className="text-primary hover:underline">450-490-4104</a>
               </div>
               <div>
-                <h3 className="font-bold text-xl mb-2">Courriel</h3>
+                <h3 className="font-bold text-xl mb-2">{t.contact.email}</h3>
                 <a href="mailto:ecole_de_danse_prestige@hotmail.com" className="text-primary hover:underline">
                   ecole_de_danse_prestige@hotmail.com
                 </a>
               </div>
               <div>
-                <h3 className="font-bold text-xl mb-2">Heures du bureau H2026</h3>
+                <h3 className="font-bold text-xl mb-2">{t.contact.officeHours}</h3>
                 <div className="text-on-surface-variant space-y-1">
                   <p>Lundi: 18h00-21h00</p>
                   <p>Mercredi: 18h00-21h30</p>
@@ -67,7 +71,7 @@ export default function Contact() {
 
               <div>
                 <label htmlFor="name" className="block text-sm font-medium text-on-surface-variant mb-2">
-                  Nom
+                  {t.contact.nameLabel}
                 </label>
                 <input
                   type="text"
@@ -81,7 +85,7 @@ export default function Contact() {
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div>
                   <label htmlFor="email" className="block text-sm font-medium text-on-surface-variant mb-2">
-                    Courriel
+                    {t.contact.emailLabel}
                   </label>
                   <input
                     type="email"
@@ -93,7 +97,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <label htmlFor="phone" className="block text-sm font-medium text-on-surface-variant mb-2">
-                    Téléphone
+                    {t.contact.phoneLabel}
                   </label>
                   <input
                     type="tel"
@@ -106,7 +110,7 @@ export default function Contact() {
 
               <div>
                 <label htmlFor="message" className="block text-sm font-medium text-on-surface-variant mb-2">
-                  Message
+                  {t.contact.messageLabel}
                 </label>
                 <textarea
                   id="message"
@@ -121,7 +125,7 @@ export default function Contact() {
                 type="submit"
                 className="w-full bg-primary text-on-primary px-8 py-4 rounded-full font-bold hover:scale-[1.02] active:scale-95 transition-all"
               >
-                Envoyer
+                {t.contact.send}
               </button>
             </form>
           </div>

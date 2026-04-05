@@ -1,8 +1,12 @@
+import { useLanguage } from '../contexts/LanguageContext'
+
 export default function Location() {
+  const { t } = useLanguage()
+
   return (
     <>
       <section className="max-w-7xl mx-auto px-8 mb-24">
-        <h1 className="text-5xl md:text-7xl text-primary mb-12">Location</h1>
+        <h1 className="text-5xl md:text-7xl text-primary mb-12">{t.location.title}</h1>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-start">
           <div className="aspect-[4/3] rounded-xl overflow-hidden bg-surface-container-high flex items-center justify-center">
@@ -25,7 +29,7 @@ export default function Location() {
               rel="noopener noreferrer"
               className="inline-block bg-primary text-on-primary px-10 py-4 rounded-full font-bold hover:scale-105 active:scale-95 transition-all mt-4"
             >
-              Rendez-vous
+              {t.location.appointment}
             </a>
           </div>
         </div>
