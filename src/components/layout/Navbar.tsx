@@ -28,6 +28,7 @@ export default function Navbar() {
   const navLinks = [
     { to: '/', label: t.nav.home },
     { to: '/programmes', label: t.nav.programs },
+    { to: '/horaire', label: t.nav.schedule },
     { to: '/a-propos', label: t.nav.about },
     { to: '/competitif', label: t.nav.competitive },
   ]
