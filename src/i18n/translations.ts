@@ -15,6 +15,9 @@ export const translations = {
       location: 'Location',
       contact: 'Contact',
       enroll: "S'inscrire",
+      coursesGroup: 'Cours',
+      studioGroup: 'Studio',
+      familleGroup: 'Famille',
     },
     // Footer
     footer: {
@@ -157,6 +160,9 @@ export const translations = {
       location: 'Rental',
       contact: 'Contact',
       enroll: 'Enroll Now',
+      coursesGroup: 'Classes',
+      studioGroup: 'Studio',
+      familleGroup: 'Family',
     },
     footer: {
       tagline: 'Dance school in Laval since 2008. We cultivate movement with grace, discipline and passion for all ages.',
